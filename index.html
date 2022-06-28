@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="action">
-        <div class="profile">
+        <div class="profile" onclick="menuToggle()">
             <img src="https://images.pexels.com/photos/3134555/pexels-photo-3134555.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
         </div>
         <div class="menu">
@@ -24,5 +24,13 @@
             </ul>
         </div>
     </div>
+
+
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.menu')
+            toggleMenu.classList.toggle('active')
+        }
+    </script>
 </body>
 </html>
